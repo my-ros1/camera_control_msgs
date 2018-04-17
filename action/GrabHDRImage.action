@@ -8,7 +8,7 @@ bool exposure_given
 
 # The list of target exposure time in microseconds.
 # It is possible to grab only one image as well as several images with
-# different exposure times. This values can be overriden from the brightness
+# different exposure times. This values can be overridden from the brightness
 # search, in case that the flag exposure_fixed is not true.
 # The interface will only try to set these values if the exposure_given flag is
 # set to true.
@@ -43,7 +43,7 @@ bool gain_given
 
 # The target gain values in percent of the maximal value the camera supports
 # For USB-Cameras, the gain is in dB, for GigE-Cameras it is given in so
-# called 'device specific units'. This value can be overriden from the
+# called 'device specific units'. This value can be overridden from the
 # brightness search, in case that the gain_fixed flag is set to false.
 # The interface will only try to reach this values if the gain_given flag is
 # set to true.

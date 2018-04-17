@@ -6,7 +6,7 @@ int32 target_brightness
 # If it is set to false, the given brightness will only be reached once.
 # Hence changing light conditions lead to changing brightness values.
 # If it is set to true, the given brightness will be reached continuously,
-# trying to adapt to changing light conditions. The 'brightness_contunuous'
+# trying to adapt to changing light conditions. The 'brightness_continuous'
 # mode is is only possible for values in the possible auto range of the pylon
 # API which is e.g. [50 - 205] for acA2500-14um and acA1920-40gm
 bool brightness_continuous
@@ -15,7 +15,7 @@ bool brightness_continuous
 # to changing light conditions, at least one of the following flags MUST be set.
 # If both are set, the interface will use the profile that tries to keep the
 # gain at minimum to reduce white noise.
-# 'exposure_auto' will adapt the exposure time to reach the brightness, wheras
+# 'exposure_auto' will adapt the exposure time to reach the brightness, whereas
 # 'gain_auto' does so by adapting the gain.
 bool exposure_auto
 bool gain_auto

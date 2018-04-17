@@ -9,7 +9,7 @@ bool exposure_given
 # Only relevant, if exposure_given is true:
 # The list of target exposure times in microseconds.
 # It is possible to grab only one image as well as several images with
-# different exposure times. This values can be overriden from the brightness
+# different exposure times. This values can be overridden from the brightness
 # search, in case that the flag exposure_fixed is not true.
 float32[] exposure_times
 
@@ -20,7 +20,7 @@ bool gain_given
 # Only relevant, if gain_given is true:
 # The target gain in percent of the maximal value the camera supports.
 # For USB-Cameras, the gain is in dB, for GigE-Cameras it is given in so
-# called 'device specific units'. This value can be overriden from the
+# called 'device specific units'. This value can be overridden from the
 # brightness search, in case that the gain_fixed flag is set to false.
 float32[] gain_values
 
@@ -48,7 +48,7 @@ float32[] brightness_values
 # If the camera should try reach the desired brightness, at least one of the
 # following flags MUST be set. If both are set, the interface will use the
 # profile that tries to keep the gain at minimum to reduce white noise.
-# 'exposure_auto' will adapt the exposure time to reach the brightness, wheras
+# 'exposure_auto' will adapt the exposure time to reach the brightness, whereas
 # 'gain_auto' does so by adapting the gain. If one of these flags is set to
 # false, the connected property will be kept fix.
 # In most of the cases trying to reach a target brightness only by varying the
